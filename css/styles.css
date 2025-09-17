@@ -68,11 +68,39 @@ h2 {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    border: 2px solid var(--primary-color);
-    padding: 15px;
-    border-radius: var(--border-radius);
+  display: flex;
+  justify-content : center ;
+  align-items : center ;
+  border: 2px solid var(--primary-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  height: fit-content;
+  min-height : 50% ;
+  
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: "parisienne", cursive;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
